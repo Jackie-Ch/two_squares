@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgb(68, 68, 68);
+}
+
+h4 {
+  margin: 0;
+}
+
+.wrapper {
+  max-width: 1280px;
+  display: flex;
+  gap: 20px;
+}
+
+.canvas {
+  width: 800px;
+  height: 800px;
+  background-color: rgb(223, 230, 237);
+  position: relative;
+}
+
+.changeColor {
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+  padding: 15px;
+  border: 2px solid #c2d2d3;
+}
+
+.resetBtn {
+  width: 100%;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: rgb(44, 136, 217);
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.colors {
+  display: flex;
+  gap: 7px;
+}
+
+.violet,
+.green,
+.orange {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.sqr1,
+.sqr2 {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  background-color: rgb(227, 207, 243);
+  border: 2px solid rgb(188, 58, 188);
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.sqr2 {
+  background-color: rgb(209, 239, 206);
+  border-color: rgb(99, 211, 89);
+}
+
+.sqr1.active,
+.sqr2.active {
+  border-style: dashed;
+}
